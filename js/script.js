@@ -165,4 +165,14 @@ $(document).ready(function () {
   $(".nu1")
     .nextUntil(".nu2")
     .css({ color: "blue", border: "2px solid goldenRod" });
+
+  // filtering
+  $(".first1").first().css({ color: "white", backgroundColor: "black" });
+  $(".last").last().css({ color: "white", backgroundColor: "black" });
+  // eq( )
+  $(".eq").eq(2).css({ backgroundColor: "green", color: "white" });
+  $("p")
+    .filter(".filter")
+    .css({ backgroundColor: "goldenRod", color: "white" });
+  // $("p").not(".not").css({ backgroundColor: "goldenRod", color: "white" });
 });

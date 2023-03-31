@@ -69,3 +69,12 @@ body {
   padding: 10px;
   border: 2px solid green;
 }
+.first1,
+.last {
+  margin: 20px 0;
+  padding: 30px;
+  border: 2px solid;
+}
+.eq {
+  padding: 10px 15px;
+}
