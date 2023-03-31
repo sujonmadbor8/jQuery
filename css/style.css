@@ -1,0 +1,71 @@
+/* common css  */
+body {
+}
+/* common css  */
+#fade_btn {
+  font-size: 25px;
+  border-radius: 0;
+}
+#fade_toggle {
+  display: none;
+}
+
+/* slide toggle  */
+#flip,
+#flip1 {
+  padding: 20px;
+  background-color: darkcyan;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  cursor: pointer;
+}
+#panel,
+#panel1 {
+  padding: 30px;
+  background-color: lightcyan;
+  display: none;
+}
+
+/* left to right  */
+#animation1,
+#animation2,
+#animation3,
+#animation4,
+#animation5 {
+  position: relative;
+  height: 100px;
+  width: 100px;
+}
+#animation1 {
+  background-color: rgb(178, 226, 228);
+}
+#animation2 {
+  background-color: rgb(183, 241, 82);
+}
+#animation3 {
+  background-color: rgb(35, 255, 200);
+}
+#animation4 {
+  background-color: rgb(7, 68, 53);
+}
+#animation5 {
+  background-color: rgb(27, 101, 185);
+  color: white;
+}
+.orange {
+  color: orange;
+}
+.font_size {
+  font-size: 35px;
+  background-color: lightslategray;
+  color: white;
+  padding: 5px 15px;
+}
+
+.ancestors * {
+  display: block;
+  margin: 15px;
+  padding: 10px;
+  border: 2px solid green;
+}
