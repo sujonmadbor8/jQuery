@@ -175,4 +175,44 @@ $(document).ready(function () {
     .filter(".filter")
     .css({ backgroundColor: "goldenRod", color: "white" });
   // $("p").not(".not").css({ backgroundColor: "goldenRod", color: "white" });
+  $("#loadBtn").click(function () {
+    $("#load").load("Change_file.txt", function (responseTxt, statusTxt, xhr) {
+      if (statusTxt == "success") {
+        alert("External content loaded successfully!");
+      } else alert("Error: " + xhr.status + ": " + xhr.statusTxt);
+    });
+  });
+  // get
+  $("#getBtn").click(function () {
+    $.get("Change_file.txt", function (data, status) {
+      alert("Data: " + data + "\nStatus: " + status);
+    });
+  });
+  //  post
+  $("#postBtn").click(function () {
+    $.post(
+      "Change_file.txt",
+      {
+        name: "Sujon Madbor",
+        city: "Dhaka",
+      },
+      function (data, status) {
+        alert("Data: " + data + "\nStatus: " + status);
+      }
+    );
+  });
+
+  // search filter
+  $("#myInput").on("keyup", function () {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function () {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+    });
+  });
+  $("#myInput1").on("keyup", function () {
+    var value = $(this).val().toLowerCase();
+    $("#myList li").filter(function () {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1);
+    });
+  });
 });

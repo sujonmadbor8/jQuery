@@ -427,43 +427,114 @@
           <p>Lorem ipsum dolor sit amet.</p>
           <p>Lorem ipsum dolor sit amet.</p>
         </div>
-       <div>
-        <h3>Find the last division</h3>
-        <div class="last">
-          <h5>first</h5>
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>Lorem ipsum dolor sit amet.</p>
+        <div>
+          <h3>Find the last division</h3>
+          <div class="last">
+            <h5>first</h5>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div class="last">
+            <h5>Second</h5>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div class="last">
+            <h5>Third</h5>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
+          <div class="last">
+            <h5>last</h5>
+            <p>Lorem ipsum dolor sit amet.</p>
+            <p>Lorem ipsum dolor sit amet.</p>
+          </div>
         </div>
-        <div class="last">
-          <h5>Second</h5>
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>Lorem ipsum dolor sit amet.</p>
-        </div>
-        <div class="last">
-          <h5>Third</h5>
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>Lorem ipsum dolor sit amet.</p>
-        </div>
-        <div class="last">
-          <h5>last</h5>
-          <p>Lorem ipsum dolor sit amet.</p>
-          <p>Lorem ipsum dolor sit amet.</p>
-        </div>
-      </div>
 
-      <div >
-        <h3>find with eq()</h3>
-        <p class="eq">Lorem ipsum dolor sit amet.  index: 0</p>
-        <p class="eq">Lorem ipsum dolor sit amet.  index: 1</p>
-        <p class="eq">Lorem ipsum dolor sit amet.  index: 2</p>
-        <p class="eq">Lorem ipsum dolor sit amet.  index: 3</p>
-      </div>
-      <div >
-        <h3>find with filter()</h3>
-        <p class="">Lorem ipsum dolor sit amet.  index: 0</p>
-        <p class="filter">Lorem ipsum dolor sit amet.  index: 1</p>
-        <p class="filter">Lorem ipsum dolor sit amet.  index: 2</p>
-        <p class="">Lorem ipsum dolor sit amet.  index: 3</p>
+        <div>
+          <h3>find with eq()</h3>
+          <p class="eq">Lorem ipsum dolor sit amet. index: 0</p>
+          <p class="eq">Lorem ipsum dolor sit amet. index: 1</p>
+          <p class="eq">Lorem ipsum dolor sit amet. index: 2</p>
+          <p class="eq">Lorem ipsum dolor sit amet. index: 3</p>
+        </div>
+        <div>
+          <h3>find with filter()</h3>
+          <p class="">Lorem ipsum dolor sit amet. index: 0</p>
+          <p class="filter">Lorem ipsum dolor sit amet. index: 1</p>
+          <p class="filter">Lorem ipsum dolor sit amet. index: 2</p>
+          <p class="">Lorem ipsum dolor sit amet. index: 3</p>
+        </div>
+        <div>
+          <h4>Ajax load</h4>
+          <div id="load"><h2>Let jQuery AJAX Change This Text</h2></div>
+          <button id="loadBtn" type="button" class="btn btn-secondary">
+            Get External Content
+          </button>
+        </div>
+        <!-- get  -->
+        <button id="getBtn" type="button" class="btn btn-warning my-4">
+          Send an HTTP GET request to a page and get the result</button
+        ><br />
+        <!-- post  -->
+        <button id="postBtn" type="button" class="btn btn-success my-4">
+          Send an HTTP POST request to a page and Post the result
+        </button>
+
+        <h2>Filterable Table</h2>
+        <p>
+          Type something in the input field to search the table for first names,
+          last names or emails:
+        </p>
+        <input id="myInput" type="text" placeholder="Search.." />
+        <br /><br />
+
+        <table>
+          <thead>
+            <tr>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody id="myTable">
+            <tr>
+              <td>Sujon</td>
+              <td>Madbor</td>
+              <td>john@example.com</td>
+            </tr>
+            <tr>
+              <td>AB</td>
+              <td>Asif</td>
+              <td>mary@mail.com</td>
+            </tr>
+            <tr>
+              <td>Tusar</td>
+              <td>Ahamed</td>
+              <td>a_r@test.com</td>
+            </tr>
+            <tr>
+              <td>Yousuf</td>
+              <td>saFin</td>
+              <td>july@greatstuff.com</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <p>
+          Note that we start the search in tbody, to prevent filtering the table
+          headers.
+        </p>
+        <br /><br />
+        <input id="myInput1" type="text" placeholder="Search.." />
+        <br />
+
+        <ul id="myList">
+          <li>First item</li>
+          <li>Second item</li>
+          <li>Third item</li>
+          <li>Fourth</li>
+        </ul>
       </div>
     </section>
 
